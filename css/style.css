@@ -1,0 +1,41 @@
+/* Style the tab buttons */
+
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: "Times New Roman";
+}
+
+.tablink {
+    background-color: #e3e3e3;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #e3e3e3;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 10px ;
+    text-align: center;
+    height: 100%;
+}
+
+
+/* Style each tab content individually */
+#BestSellers {background-color:#C0B283;}
+#BookLists {background-color:#DCD0C0;}
+#Authors {background-color:#F4F4F4;}
+#ReaderReviews {background-color: #C4AC8B;}
+#Login {background-color: #aec4bc}

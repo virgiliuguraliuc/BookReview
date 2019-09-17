@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookReview</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/c4898aa475.js"></script>
+</head>
+<body>
+
+<button class="tablink" onclick="openBookTab('BestSellers', this, '#C0B283')" id="defaultOpen">BestSellers</button>
+<button class="tablink" onclick="openBookTab('BookLists', this, '#DCD0C0')">BookLists</button>
+<button class="tablink" onclick="openBookTab('Authors', this, '#F4F4F4')">Authors</button>
+<button class="tablink" onclick="openBookTab('ReaderReviews', this, '#C4AC8B')">ReaderReviews</button>
+<button class="tablink" onclick="openBookTab('Login', this, '#aec4bc')">Login</button>
+
+    <div id="BestSellers" class="tabcontent">
+    <h1>Best Sellers</h1>
+    <p>Latest best sellers.</p>
+    </div>
+
+    <div id="BookLists" class="tabcontent">
+    <h1>Book Lists</h1>
+    <p>Reviews by avid readers.</p>
+    </div>
+
+    <div id="Authors" class="tabcontent">
+    <h1>Authors</h1>
+    <p>Choose your style, explore others.</p>
+    </div>
+
+    <div id="ReaderReviews" class="tabcontent">
+    <h1>Reader Reviews</h1>
+    <p>Our readers recommend...</p>
+    </div>
+
+    <div id="Login" class="tabcontent">
+        <div class="container">
+            <div class="main">
+                <h2>Login Form </h2>
+                <form id="form_id" method="post" name="myform">
+                    <input type="text" name="username" id="username" placeholder="user name"/>
+                    <input type="password" name="password" id="password" placeholder="password"/>
+                    <input type="button" value="Login" id="submit" onclick="validate()"/>
+                </form>
+                <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+<script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/book-review.js"></script>
+<link rel="stylesheet" href="css/login_style.css"/>
+<script src="js/login.js"></script>
+
+</body>
+</html>
